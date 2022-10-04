@@ -6,12 +6,10 @@ A vote plugin to reward players when they vote.
 
 ## Why this fork
 
-This fork add a way for players to choice on which server the reward should be given. 
+This fork add a way for players to choice on which server the reward should be given. Here is an example
+![image](https://user-images.githubusercontent.com/74878280/126628099-58560bf9-a186-4aee-a1c5-f3df7bddbe9c.png)
 
 A pull request has been done and refused [here](https://github.com/Azuriom/Plugin-Vote/pull/22)
-
-Here is an example
-![image](https://user-images.githubusercontent.com/74878280/126628099-58560bf9-a186-4aee-a1c5-f3df7bddbe9c.png)
 
 ## Theme
 
