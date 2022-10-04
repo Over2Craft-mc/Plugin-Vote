@@ -73,7 +73,7 @@ class Reward extends Model
         return $this->belongsToMany(Server::class, 'vote_reward_server');
     }
 
-    public function giveTo(User $user)
+    public function giveTo(User $user, int $serverId = null)
     {
         if ($this->money > 0) {
             $user->addMoney($this->money);
@@ -94,6 +94,10 @@ class Reward extends Model
         }, $commands);
 
         foreach ($this->servers as $server) {
+            if ($serverId !== null && $serverId !== $server->id) {
+                continue;
+            }
+
             $server->bridge()->sendCommands($commands, $user, $this->need_online);
         }
     }
