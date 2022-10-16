@@ -17,7 +17,7 @@ You will need a small adjustment with your theme to use this fork, otherwise
 you will get an error `Illuminate\Contracts\Encryption\DecryptException : The payload is invalid.` while voting.
 
 See [here](https://github.com/Azuriom/Plugin-Vote/compare/master...magrigry:multi-server/1.x?expand=1#diff-e6a72274bd2be1ba8cf26cb930f07d9c65cf4329bfc5f832779d8be3129ea3c6) 
-an example that show to modify your theme for it to work with this fork.
+an example that show how to modify your theme for it to work with this fork.
 
 ## Review changes
 Changes are simple and easy to read. You can review them [here](https://github.com/Azuriom/Plugin-Vote/compare/master...magrigry:multi-server/1.x?expand=1)
