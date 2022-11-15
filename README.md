@@ -25,7 +25,7 @@ Changes are simple and easy to read. You can review them [here](https://github.c
 ## Installation
 
 ### Edit your theme 
-Edit the file `views/plugins/vote/index.blade.php` in your theme. If it doesn't exist, create it with and put the content of [this file](https://github.com/magrigry/Plugin-Vote/blob/multi-server/1.x/resources/views/index.blade.php) in it. If the file exist, edit it and add this piece of code where you want to see the server choice list :
+Edit the file `views/plugins/<your_theme>/index.blade.php` in your theme. If it doesn't exist, create it with and put the content of [this file](https://github.com/magrigry/Plugin-Vote/blob/multi-server/1.x/resources/views/index.blade.php) in it. If the file exist, edit it and add this piece of code where you want to see the server choice list :
 ```php
             @if(isset(serversChoice))
                 @if (count($serversChoice) > 1)
