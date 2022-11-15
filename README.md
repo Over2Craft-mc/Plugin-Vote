@@ -24,4 +24,25 @@ Changes are simple and easy to read. You can review them [here](https://github.c
 
 ## Installation
 
-Download this fork as a zip. Go to your Azuriom root directory, extract the content into `./plugins/vote` 
+### Edit your theme 
+Edit the file `views/plugins/vote/index.blade.php` in your theme. If it doesn't exist, create it with and put the content of [this file](https://github.com/magrigry/Plugin-Vote/blob/multi-server/1.x/resources/views/index.blade.php) in it. If the file exist, edit it and add this piece of code where you want to see the server choice list :
+```php
+            @if(isset(serversChoice))
+                @if (count($serversChoice) > 1)
+                    <select id="stepServerIdInput">
+                        @foreach($serversChoice as $id => $name)
+                            <option value="{{ $id }}">{{ $name }} </option>
+                        @endforeach
+                    </select>
+                @else
+                    <input type="hidden" id="stepServerIdInput" value="{{ array_key_first($serversChoice) }}">
+                @endif
+            @endif    
+```
+
+### Installating the fork
+* Click the download button to download this fork as a zip. 
+* Go to your Azuriom root directory
+* If the directory `./plugins/vote` exists, delete it or rename it e.g. `votes.old`. This won't delete any data, plugins are stateless. 
+* Create the directory `./plugins/vote` with the right permissions (same as other plugins)
+* Extract the content of the zip into `./plugins/vote` 
