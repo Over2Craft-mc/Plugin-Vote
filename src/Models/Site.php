@@ -91,9 +91,15 @@ class Site extends Model
         $rewards = clone $this->rewards;
         if ($server_id !== null) {
             $rewards = $rewards->filter(function (Reward $reward) use ($server_id) {
-                return $reward->servers->filter(function (Server $server) use ($server_id) {
+                $servers = $reward->servers->filter(function (Server $server) use ($server_id) {
                     return $server->id === $server_id;
                 });
+
+                if ($servers->isEmpty()) {
+                    return false;
+                }
+
+                return true;
             });
         }
 
