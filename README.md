@@ -22,12 +22,6 @@ List of themes that already support this fork :
 You will need a small adjustment with your theme to use this fork, otherwise
 you will get an error `Illuminate\Contracts\Encryption\DecryptException : The payload is invalid.` while voting.
 
-See [here](https://github.com/Azuriom/Plugin-Vote/compare/master...magrigry:multi-server/1.x?expand=1#diff-e6a72274bd2be1ba8cf26cb930f07d9c65cf4329bfc5f832779d8be3129ea3c6) 
-an example that show how to modify your theme for it to work with this fork.
-
-## Installation
-
-### Edit your theme if needed
 Edit the file `views/plugins/<your_theme>/index.blade.php`. If it doesn't exist, create it and put the content of [this file](https://github.com/magrigry/Plugin-Vote/blob/multi-server/1.x/resources/views/index.blade.php) in it. If the file already exists, edit it and add this piece of code where you want to see the server choice list :
 ```php
             @if(isset(serversChoice))
@@ -43,7 +37,7 @@ Edit the file `views/plugins/<your_theme>/index.blade.php`. If it doesn't exist,
             @endif    
 ```
 
-### Installating the fork
+## Installating the fork
 * Click the download button to download this fork as a zip. 
 * Go to your Azuriom root directory
 * If the directory `./plugins/vote` exists, delete it or rename it e.g. `votes.old`. This won't delete any data, plugins are stateless. 
