@@ -16,7 +16,7 @@ A pull request has been done and refused [here](https://github.com/Azuriom/Plugi
 ### Your theme may already support this fork. 
 If it don't, you will need to edit it manually or ask to the author of the theme to edit it.
 List of themes that already support this fork : 
-* (rainbow)[https://market.azuriom.com/resources/71] (you will need to edit the theme confguration)
+* [rainbow](https://market.azuriom.com/resources/71) (you will need to edit the theme confguration)
 
 ### How to edit your theme
 You will need a small adjustment with your theme to use this fork, otherwise
