@@ -27,7 +27,7 @@ an example that show how to modify your theme for it to work with this fork.
 
 ## Installation
 
-### Edit your theme 
+### Edit your theme if needed
 Edit the file `views/plugins/<your_theme>/index.blade.php`. If it doesn't exist, create it and put the content of [this file](https://github.com/magrigry/Plugin-Vote/blob/multi-server/1.x/resources/views/index.blade.php) in it. If the file already exists, edit it and add this piece of code where you want to see the server choice list :
 ```php
             @if(isset(serversChoice))
