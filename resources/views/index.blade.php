@@ -32,6 +32,7 @@
 
                 @if (count($serversChoice) > 1)
                     <select id="stepServerIdInput">
+                        <option></option>
                         @foreach($serversChoice as $id => $name)
                             <option value="{{ $id }}">{{ $name }} </option>
                         @endforeach
