@@ -25,9 +25,6 @@ you will get an error `Illuminate\Contracts\Encryption\DecryptException : The pa
 See [here](https://github.com/Azuriom/Plugin-Vote/compare/master...magrigry:multi-server/1.x?expand=1#diff-e6a72274bd2be1ba8cf26cb930f07d9c65cf4329bfc5f832779d8be3129ea3c6) 
 an example that show how to modify your theme for it to work with this fork.
 
-## Review changes
-Changes are simple and easy to read. You can review them [here](https://github.com/Azuriom/Plugin-Vote/compare/master...magrigry:multi-server/1.x?expand=1)
-
 ## Installation
 
 ### Edit your theme 
@@ -52,3 +49,7 @@ Edit the file `views/plugins/<your_theme>/index.blade.php`. If it doesn't exist,
 * If the directory `./plugins/vote` exists, delete it or rename it e.g. `votes.old`. This won't delete any data, plugins are stateless. 
 * Create the directory `./plugins/vote` with the right permissions (same as other plugins)
 * Extract the content of the zip into `./plugins/vote` 
+
+## Review changes
+This fork is safe to use. Changes are simple and easy to read. You can review them [here](https://github.com/Azuriom/Plugin-Vote/compare/master...magrigry:multi-server/1.x?expand=1)
+
