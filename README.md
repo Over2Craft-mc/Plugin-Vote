@@ -22,7 +22,7 @@ List of themes that already support this fork :
 You will need a small adjustment with your theme to use this fork, otherwise
 you will get an error `Illuminate\Contracts\Encryption\DecryptException : The payload is invalid.` while voting.
 
-Edit the file `views/plugins/<your_theme>/index.blade.php`. If it doesn't exist, create it and put the content of [this file](https://github.com/magrigry/Plugin-Vote/blob/multi-server/1.x/resources/views/index.blade.php) in it. If the file already exists, edit it and add this piece of code where you want to see the server choice list :
+Edit the file `views/plugins/<your_theme>/index.blade.php`. If it doesn't exist, you can skip this step. If the file already exists, edit it and add this piece of code where you want to see the server choice list :
 ```php
             @if(isset(serversChoice))
                 @if (count($serversChoice) > 1)
